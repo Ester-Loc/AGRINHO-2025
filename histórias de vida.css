@@ -21,7 +21,7 @@
 }
 
 body {
-    background-color: var(--cor-de-fundo);
+    background-color: #ffffff;
     color: var(--branco);
     font-family: var(--fonte-principal);
     background-image: url(imagens/en);
@@ -242,18 +242,20 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 940px;
+    width: 940px;
     width: 100%;
     margin: 0 auto;
 }
 
 .caixa-conteudo-principal {
-    background-color: #eacceed5;
+    background-color: #1F3B73;
+    color: #FFFFFF;
     width: 940px;
     margin: 0 auto;
     padding: 50px 50px;
-    align-items: center;
+    align-items: center;   
 }
+
 
 .titulo-secundario {
     text-align: center;

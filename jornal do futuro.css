@@ -3,24 +3,67 @@
 @import url("styles/rodapé.css");
 
 :root {
-    --cor-de-fundo: #fceef1;
-    --verde: #5a0017;
-    --branco-2: #3f0713;
+    --cor-de-fundo: #ffffff;
+    --verde: #000c5a;
+    --branco-2: #08073f;
     --branco: #ffffff;
-    --botao-ativo: #da7586;
-    --botao-inativo: #f0a9b5;
+    --botao-ativo: #7598da;
+    --botao-inativo: #a9bff0;
     --fonte-principal: "Poppins";
-    --texto-fundo: #eecccf;
+    --texto-fundo: #b6d2ea;
     --texto: #000000;
     /* Melhor contraste para leitura */
-    --azul-degrade: linear-gradient(97.54deg, #99223c 35.49%, #fd9bbc 165.37%);
+    --azul-degrade: linear-gradient(97.54deg, #1F3B73 35.49%, #9bb7fd 165.37%);
     --laranja: #000000;
     --fonte-secundario: "Josefin Sans";
     --preto: #000000;
 }
 
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #2278c9;
+    /* azul moderno */
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
 body {
-    background-color: var(--cor-de-fundo);
+    background-color: #e7f1fa;
     color: var(--branco);
     font-family: var(--fonte-principal);
     background-image: url(imagens/imagem.de.fundo.horta.png);
@@ -29,6 +72,7 @@ body {
     background-size: cover;
     color: var(--texto);
 }
+
 .cabeçalho__menu-hamburguer {
     width: 24px;
     height: 24px;
@@ -62,7 +106,8 @@ body {
 .container__imagem {
     padding: 1em;
     width: 40px;
-    height: auto; /* Mantém a proporção da imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
 }
 
 .lista-menu {
@@ -110,9 +155,10 @@ body {
     display: none;
 }
 
-.container__titulo:hover{
-    color: #c71945;
+.container__titulo:hover {
+    color: #1F3B73;
 }
+
 .container__titulo--negrito {
     font-size: 10px;
 }
@@ -122,9 +168,10 @@ body {
     font-size: 18px;
 }
 
-.opções :hover{
-    color: #c71945;
+.opções :hover {
+    color: #1F3B73;
 }
+
 .container__texto {
     display: none;
 }
@@ -217,6 +264,7 @@ body {
         display: block;
     }
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -227,7 +275,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(135, 177, 244);
     text-align: center;
 }
 
@@ -240,17 +288,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 940px;
+    width: 940px;
     width: 100%;
     margin: 0 auto;
 }
 
 .caixa-conteudo-principal {
-    background-color: #eecccfd5;
+    background-color: #1F3B73;
+    color: #FFFFFF;
     width: 940px;
     margin: 0 auto;
     padding: 50px 50px;
-    align-items: center;
+    align-items: center;   
 }
 
 .titulo-secundario {
@@ -285,178 +334,7 @@ body {
 .topicos-negrito {
     font-weight: 700;
 }
-.topicos li {
-    font-weight: 400;
-    margin: 20px 10px 20px 10px;
-}
 
-.produtos {
-    width: 940px;
-    margin: 0 auto;
-    padding: 60px 0;
-}
-
-.produtos li {
-    display: inline-block;
-    text-align: center;
-    width: 22%;
-    vertical-align: top;
-    table-layout: auto;
-    margin: 0 1.3%;
-    padding: 10px 0px;
-    box-sizing: border-box;
-    border-radius: 3px;
-    background-color: #f8e9ff6c;
-    margin-top: 10px;
-}
-
-.produtos h2 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 10px 0 10px 0;
-    text-transform: uppercase;
-}
-
-.produto-descricao {
-    font-size: 15px;
-    margin: 10px 0 10px 0;
-}
-
-.produto-preco {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px 0 10px 0;
-}
-
-.imagens {
-    border-radius: 2px;
-    margin-top: 5px;
-    width: 65%;
-}
-
-.botao {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--botao-inativo);
-    color: var(--branco);
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-    font-size: 18px;
-    align-items: center;
-    width: 75%;
-    border-bottom: 4px solid var(--botao-ativo);
-    border-left: 2px solid var(--botao-ativo);
-    border-right: 2px solid var(--botao-ativo);
-    border-top: none;
-}
-
-.botao.ativo {
-    background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
-}
-
-.abas-textos {
-    background-color: var(--texto-fundo);
-    padding: 40px;
-}
-
-.aba-conteudo.ativo {
-    display: block;
-}
-.aba-conteudo.ativo h2{
-    font-size: 20px;
-    font-weight: 600;
-}
-.aba-conteudo.ativo h3{
-    margin: 10px 0 10px 0;
-}
-.aba-conteudo.ativo h4{
-    margin: 10px 0 10px 0;
-}
-.aba-conteudo {
-    display: none;
-}
-
-.aba-conteudo-titulo-principal {
-    font-size: 20px;
-    text-align: left;
-}
-
-.aba-conteudo-titulo-secundario {
-    text-align: left;
-    color: var(--verde);
-    text-transform: uppercase;
-}
-
-.contador {
-    display: column;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.contador-pragas {
-    padding: 0 16px;
-    text-align: center;
-    min-width: 100px;
-}
-
-.contador-pragas-daninhas {
-    font-size: 18px;
-    margin: 0;
-}
-
-.contador-pragas-agrotoxicos {
-    color: var(--verde);
-    font-size: 19px;
-    margin: 0;
-
-}
-
-@media screen and (min-width: 768px) {
-    .botoes {
-        display: flex;
-    }
-
-    .botao:first-child {
-        border-radius: 5px 0 5px 0;
-    }
-
-    .botao:last-child {
-        border-radius: 0 5px 0 5px;
-    }
-
-}
-
-.styled-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 20px;
-    text-align: left;
-}
-
-.styled-table thead tr {
-    background-color: #98002e8a;
-    color: #2707139c;
-    text-align: left;
-}
-
-.styled-table th,
-.styled-table td {
-    padding: 12px 15px;
-}
-
-.styled-table tbody tr {
-    border-bottom: 1px solid #302a3179;
-}
-
-.styled-table tbody tr:nth-of-type(even) {
-    background-color: #fcf1ff73;
-}
-
-.styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #331c209a;
-}
 
 .rodapé__imagem {
     margin: 0 20px 75px 0;

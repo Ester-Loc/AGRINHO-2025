@@ -4,25 +4,25 @@
 
 :root {
     --cor-de-fundo: #eefcfa;
-    --verde: #005a42;
+    --verde: #D1BFA5;
     --branco-2: #1f3124;
     --branco: #FFFFFF;
-    --botao-ativo: #57a08a;
-    --botao-inativo: #a3dfdb;
+    --botao-ativo: #8B5E3C;
+    --botao-inativo: #D1BFA5;
     --texto-fundo: #cceede;
     --texto: #333;
     /* Melhor contraste para leitura */
-    --azul-degrade: linear-gradient(97.54deg, #268b75 35.49%, #b5fddb 165.37%);
+    --azul-degrade: linear-gradient(97.54deg, #8B5E3C 35.49%, #D1BFA5 165.37%);
     --laranja: #000000;
     --fonte-secundario: "Josefin Sans";
     --preto: #000000;
     --fonte-principal: "Poppins";
-    --cinza: #263a36;
-    --cinza-claro: #44614f;
+    --cinza: #D1BFA5;
+    --cinza-claro: #D1BFA5;
 }
 
 body {
-    background-color: var(--cor-de-fundo);
+    background-color: #FDF6EC;
     color: var(--branco);
     font-family: var(--fonte-principal);
     background-image: url(imagens/imagem.de.fundo.png);
@@ -31,6 +31,7 @@ body {
     background-size: cover;
     color: var(--texto);
 }
+
 .cabeçalho__menu-hamburguer {
     width: 24px;
     height: 24px;
@@ -64,7 +65,8 @@ body {
 .container__imagem {
     padding: 1em;
     width: 40px;
-    height: auto; /* Mantém a proporção da imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
 }
 
 .lista-menu {
@@ -74,9 +76,11 @@ body {
     width: 60vw;
     list-style: none;
 }
-.container__titulo:hover{
-    color: #57a07a;
+
+.container__titulo:hover {
+    color: #D1BFA5;
 }
+
 .container__botao:checked~.lista-menu {
     display: block;
 }
@@ -124,9 +128,10 @@ body {
     font-size: 18px;
 }
 
-.opções :hover{
-    color: #57a085;
+.opções :hover {
+    color: #8B5E3C;
 }
+
 .container__texto {
     display: none;
 }
@@ -249,7 +254,8 @@ body {
 }
 
 .caixa-conteudo-principal {
-    background-color:  #cceedeb9;
+    background-color: #8B5E3C;
+    color: #FFFFFF;
     width: 940px;
     margin: 0 auto;
     padding: 50px 50px;
@@ -258,7 +264,7 @@ body {
 
 .titulo-secundario {
     text-align: center;
-    text-decoration-line: color var(--botao-ativo);
+    text-decoration-line: color #8B5E3C;
     font-weight: 700;
     font-size: 23px;
     margin: 30px 10px 0px 10px;
@@ -288,54 +294,6 @@ body {
 .topicos-negrito {
     font-weight: 700;
 }
-.topicos li {
-    font-weight: 400;
-    margin: 20px 10px 20px 10px;
-}
-
-.produtos {
-    width: 940px;
-    margin: 0 auto;
-    padding: 60px 0;
-}
-
-.produtos li {
-    display: inline-block;
-    text-align: center;
-    width: 22%;
-    vertical-align: top;
-    table-layout: auto;
-    margin: 0 1.3%;
-    padding: 10px 0px;
-    box-sizing: border-box;
-    border-radius: 3px;
-    background-color: #f8e9ff6c;
-    margin-top: 10px;
-}
-
-.produtos h2 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 10px 0 10px 0;
-    text-transform: uppercase;
-}
-
-.produto-descricao {
-    font-size: 15px;
-    margin: 10px 0 10px 0;
-}
-
-.produto-preco {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px 0 10px 0;
-}
-
-.imagens {
-    border-radius: 2px;
-    margin-top: 5px;
-    width: 65%;
-}
 
 .botao {
     font-family: 'Montserrat', sans-serif;
@@ -356,27 +314,36 @@ body {
 .botao.ativo {
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
+    transition: transform 0.3s ease;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .abas-textos {
-    background-color: var(--texto-fundo);
+    background-color: #dcd1c1;
     padding: 40px;
 }
 
 .aba-conteudo.ativo {
     display: block;
 }
-.aba-conteudo.ativo h2{
+
+.aba-conteudo.ativo h2 {
     font-size: 20px;
     font-weight: 600;
 }
 
-.aba-conteudo.ativo h3{
+.aba-conteudo.ativo h3 {
     margin: 10px 0 10px 0;
 }
-.aba-conteudo.ativo h4{
+
+.aba-conteudo.ativo h4 {
     margin: 10px 0 10px 0;
 }
+
 .aba-conteudo {
     display: none;
 }
@@ -388,33 +355,10 @@ body {
 
 .aba-conteudo-titulo-secundario {
     text-align: left;
-    color: var(--verde);
+    color: #8B5E3C;
     text-transform: uppercase;
 }
 
-.contador {
-    display: column;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.contador-pragas {
-    padding: 0 16px;
-    text-align: center;
-    min-width: 100px;
-}
-
-.contador-pragas-daninhas {
-    font-size: 18px;
-    margin: 0;
-}
-
-.contador-pragas-agrotoxicos {
-    color: var(--verde);
-    font-size: 19px;
-    margin: 0;
-
-}
 
 @media screen and (min-width: 768px) {
     .botoes {
@@ -429,37 +373,6 @@ body {
         border-radius: 0 5px 0 5px;
     }
 
-}
-
-.styled-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 18px;
-    text-align: left;
-}
-
-.styled-table thead tr {
-    background-color: #0098758a;
-    color: #07270f9c;
-    text-align: left;
-}
-
-.styled-table th,
-.styled-table td {
-    padding: 12px 15px;
-}
-
-.styled-table tbody tr {
-    border-bottom: 1px solid #312a2a79;
-}
-
-.styled-table tbody tr:nth-of-type(even) {
-    background-color: #fff1f173;
-}
-
-.styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #1c33269a;
 }
 
 .rodapé__imagem {
