@@ -49,11 +49,11 @@
 .lista-menu__titulo,
 .lista-menu__item {
     padding: 1em;
-    background-color: var(--branco);
+    background-color: #1E1E1E;
 }
 
 .lista-menu__titulo {
-    color: var(--laranja);
+    color: #1E1E1E;
     font-weight: 700;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .opções :hover{
-    color: #19c767;
+    color: #1E1E1E;
 }
 .container__texto {
     display: none;

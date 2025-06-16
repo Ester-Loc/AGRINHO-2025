@@ -5,23 +5,23 @@
 
 :root {
     --cor-de-fundo: #fceef3;
-    --verde: #4b005a;
+    --verde: #C9845C;
     --branco-2: #2d1f31;
     --branco: #ffffff;
-    --botao-ativo: #8f57a0;
+    --botao-ativo: #C9845C;
     --fonte-principal: "Poppins";
-    --botao-inativo: #d3a3df;
+    --botao-inativo: #C9845C;
     --texto-fundo: #eaccee;
     --texto: #333;
     /* Melhor contraste para leitura */
-    --azul-degrade: linear-gradient(97.54deg, #7c5881 35.49%, #efb5fd 165.37%);
+    --azul-degrade: linear-gradient(97.54deg, #C9845C 35.49%, #F4EDE5 165.37%);
     --laranja: #000000;
     --fonte-secundario: "Josefin Sans";
     --preto: #000000;
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #F4EDE5;
     color: var(--branco);
     font-family: var(--fonte-principal);
     background-image: url(imagens/en);
@@ -123,7 +123,7 @@ body {
 }
 
 .opções :hover {
-    color: #9619c7;
+    color: #C9845C;
 }
 
 .container__texto {
@@ -248,12 +248,12 @@ body {
 }
 
 .caixa-conteudo-principal {
-    background-color: #1F3B73;
+    background-color: #C9845C;
     color: #FFFFFF;
     width: 940px;
     margin: 0 auto;
     padding: 50px 50px;
-    align-items: center;   
+    align-items: center;
 }
 
 
@@ -290,182 +290,120 @@ body {
     font-weight: 700;
 }
 
-.topicos li {
-    font-weight: 400;
-    margin: 20px 10px 20px 10px;
+
+
+
+
+
+
+
+
+
+/* Zera margens e remove rolagem lateral */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: sans-serif;
+  background-color: #F4EDE5;
 }
 
-.produtos {
-    width: 940px;
-    margin: 0 auto;
-    padding: 60px 0;
+/* Container dos cards em linha */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px 16px;
 }
 
-.produtos li {
-    display: inline-block;
-    text-align: center;
-    width: 22%;
-    vertical-align: top;
-    table-layout: auto;
-    margin: 0 1.3%;
-    padding: 10px 0px;
-    box-sizing: border-box;
-    border-radius: 3px;
-    background-color: #f8e9ff6c;
-    margin-top: 10px;
+/* CARD */
+.card {
+  width: 300px;
+  height: 420px;
+  perspective: 1000px;
+  cursor: pointer;
 }
 
-.produtos h2 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 10px 0 10px 0;
-    text-transform: uppercase;
+/* Miolo que vira */
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
 }
 
-.produto-descricao {
-    font-size: 15px;
-    margin: 10px 0 10px 0;
+/* Faz virar */
+.card.flip .card-inner {
+  transform: rotateY(180deg);
 }
 
-.produto-preco {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px 0 10px 0;
+/* Frente e verso */
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #D7986D;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
 }
 
-.imagens {
-    border-radius: 2px;
-    margin-top: 5px;
-    width: 65%;
+.card-hint {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-right: 12px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #FAF2EB;
+  text-align: right;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
 }
 
-.botao {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--botao-inativo);
-    color: var(--branco);
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-    font-size: 18px;
-    align-items: center;
-    width: 75%;
-    border-bottom: 4px solid var(--botao-ativo);
-    border-left: 2px solid var(--botao-ativo);
-    border-right: 2px solid var(--botao-ativo);
-    border-top: none;
+.card:hover .card-hint {
+  opacity: 1;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.botao.ativo {
-    background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
+.card-front img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
-.abas-textos {
-    background-color: var(--texto-fundo);
-    padding: 40px;
+.card-content {
+  padding: 16px;
+  flex: 1;
+  overflow-y: auto;
 }
 
-.aba-conteudo.ativo {
-    display: block;
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.aba-conteudo.ativo h2 {
-    font-size: 20px;
-    font-weight: 600;
+.card-text {
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
-.aba-conteudo.ativo h3 {
-    margin: 10px 0 10px 0;
+/* Parte de trás do card */
+.card-back {
+  transform: rotateY(180deg);
+  background-color: #A75D3D;
 }
 
-.aba-conteudo.ativo h4 {
-    margin: 10px 0 10px 0;
-}
 
-.aba-conteudo {
-    display: none;
-}
 
-.aba-conteudo-titulo-principal {
-    font-size: 20px;
-    text-align: left;
-}
-
-.aba-conteudo-titulo-secundario {
-    text-align: left;
-    color: var(--verde);
-    text-transform: uppercase;
-}
-
-.contador {
-    display: column;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.contador-pragas {
-    padding: 0 16px;
-    text-align: center;
-    min-width: 100px;
-}
-
-.contador-pragas-daninhas {
-    font-size: 18px;
-    margin: 0;
-}
-
-.contador-pragas-agrotoxicos {
-    color: var(--verde);
-    font-size: 19px;
-    margin: 0;
-
-}
-
-@media screen and (min-width: 768px) {
-    .botoes {
-        display: flex;
-    }
-
-    .botao:first-child {
-        border-radius: 5px 0 5px 0;
-    }
-
-    .botao:last-child {
-        border-radius: 0 5px 0 5px;
-    }
-
-}
-
-.styled-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 20px;
-    text-align: left;
-}
-
-.styled-table thead tr {
-    background-color: #6800988a;
-    color: #1e07279c;
-    text-align: left;
-}
-
-.styled-table th,
-.styled-table td {
-    padding: 12px 15px;
-}
-
-.styled-table tbody tr {
-    border-bottom: 1px solid #302a3179;
-}
-
-.styled-table tbody tr:nth-of-type(even) {
-    background-color: #fcf1ff73;
-}
-
-.styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #2c1c339a;
-}
 
 
 .rodapé__imagem {

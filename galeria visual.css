@@ -14,14 +14,14 @@
     --texto-fundo: #eaccee;
     --texto: #333;
     /* Melhor contraste para leitura */
-    --azul-degrade: linear-gradient(97.54deg, #7c5881 35.49%, #efb5fd 165.37%);
+    --azul-degrade: linear-gradient(97.54deg, #4A7C68 35.49%, #D8F0E8 165.37%);
     --laranja: #000000;
     --fonte-secundario: "Josefin Sans";
     --preto: #000000;
 }
 
 body {
-    background-color: var(--cor-de-fundo);
+    background-color: #D8F0E8;
     color: var(--branco);
     font-family: var(--fonte-principal);
     background-image: url(imagens/en);
@@ -123,7 +123,7 @@ body {
 }
 
 .opções :hover {
-    color: #9619c7;
+    color: #4A7C68;
 }
 
 .container__texto {
@@ -242,13 +242,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 940px;
+    width: 940px;
     width: 100%;
     margin: 0 auto;
 }
 
 .caixa-conteudo-principal {
-    background-color: #eacceed5;
+    background-color: #4a7c68;
+    color: #FFFFFF;
     width: 940px;
     margin: 0 auto;
     padding: 50px 50px;
@@ -288,182 +289,72 @@ body {
     font-weight: 700;
 }
 
-.topicos li {
-    font-weight: 400;
-    margin: 20px 10px 20px 10px;
+
+
+
+.galeria-visual {
+  padding: 4rem 2rem;
+  background-color: transparent;
 }
 
-.produtos {
-    width: 940px;
-    margin: 0 auto;
-    padding: 60px 0;
+.grade-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* espaçamento mínimo melhorado */
+  gap: 2.5rem; /* espaço entre quadros */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.produtos li {
-    display: inline-block;
-    text-align: center;
-    width: 22%;
-    vertical-align: top;
-    table-layout: auto;
-    margin: 0 1.3%;
-    padding: 10px 0px;
-    box-sizing: border-box;
-    border-radius: 3px;
-    background-color: #f8e9ff6c;
-    margin-top: 10px;
+.item-galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.produtos h2 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 10px 0 10px 0;
-    text-transform: uppercase;
+.quadro {
+  width: 100%;
+  border: 12px ridge #c0a76d;
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+  overflow: hidden; /* faz a imagem se encaixar certinho */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.produto-descricao {
-    font-size: 15px;
-    margin: 10px 0 10px 0;
+.quadro:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
 }
 
-.produto-preco {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px 0 10px 0;
+.quadro img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* garante que preencha a moldura */
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
-.imagens {
-    border-radius: 2px;
-    margin-top: 5px;
-    width: 65%;
+.legenda {
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  color: #5A3E36;
+  text-align: center;
+  font-style: italic;
+  background-color: #F8D6C0;
+  border-top: 1px solid #d5c4a1;
+  border-radius: 6px;
+  width: 90%;
+  max-width: 95%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.botao {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--botao-inativo);
-    color: var(--branco);
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-    font-size: 18px;
-    align-items: center;
-    width: 75%;
-    border-bottom: 4px solid var(--botao-ativo);
-    border-left: 2px solid var(--botao-ativo);
-    border-right: 2px solid var(--botao-ativo);
-    border-top: none;
-}
 
-.botao.ativo {
-    background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
-}
 
-.abas-textos {
-    background-color: var(--texto-fundo);
-    padding: 40px;
-}
 
-.aba-conteudo.ativo {
-    display: block;
-}
 
-.aba-conteudo.ativo h2 {
-    font-size: 20px;
-    font-weight: 600;
-}
 
-.aba-conteudo.ativo h3 {
-    margin: 10px 0 10px 0;
-}
-
-.aba-conteudo.ativo h4 {
-    margin: 10px 0 10px 0;
-}
-
-.aba-conteudo {
-    display: none;
-}
-
-.aba-conteudo-titulo-principal {
-    font-size: 20px;
-    text-align: left;
-}
-
-.aba-conteudo-titulo-secundario {
-    text-align: left;
-    color: var(--verde);
-    text-transform: uppercase;
-}
-
-.contador {
-    display: column;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.contador-pragas {
-    padding: 0 16px;
-    text-align: center;
-    min-width: 100px;
-}
-
-.contador-pragas-daninhas {
-    font-size: 18px;
-    margin: 0;
-}
-
-.contador-pragas-agrotoxicos {
-    color: var(--verde);
-    font-size: 19px;
-    margin: 0;
-
-}
-
-@media screen and (min-width: 768px) {
-    .botoes {
-        display: flex;
-    }
-
-    .botao:first-child {
-        border-radius: 5px 0 5px 0;
-    }
-
-    .botao:last-child {
-        border-radius: 0 5px 0 5px;
-    }
-
-}
-
-.styled-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 20px;
-    text-align: left;
-}
-
-.styled-table thead tr {
-    background-color: #6800988a;
-    color: #1e07279c;
-    text-align: left;
-}
-
-.styled-table th,
-.styled-table td {
-    padding: 12px 15px;
-}
-
-.styled-table tbody tr {
-    border-bottom: 1px solid #302a3179;
-}
-
-.styled-table tbody tr:nth-of-type(even) {
-    background-color: #fcf1ff73;
-}
-
-.styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #2c1c339a;
-}
 
 
 .rodapé__imagem {

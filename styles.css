@@ -11,12 +11,13 @@
     --laranja: #000000;
     --azul-degrade: linear-gradient(97.54deg, #1E1E1E 35.49%, #C5C7CC 165.37%);
     --fonte-principal: "Poppins";
-    --azul: #005233;
+    --azul: #1E1E1E;
     --fonte-secundario: "Josefin Sans";
     --preto: #000000;
     --cinza: #263a2e;
-    --cinza-claro: #44614f;
+    --cinza-claro: #1E1E1E;
 }
+
 
 body {
     background-color: #E4E5E7;
@@ -24,7 +25,39 @@ body {
     font-size: 16px;
     font-weight: 400;
 }
+
+.cabeçalho {
+  position: relative;
+  z-index: 10; /* Garante que fique por cima da imagem e do ::before */
+}
+
+.banner {
+  background-image: url("imagens/entadamuseu.png.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Camada escura transparente para melhorar a leitura */
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* escurece levemente o fundo */
+  z-index: -1;
+}
+
+.banner h2,
+.banner p {
+  position: relative;
+  z-index: 2;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* opcional: melhora contraste do texto */
+}
+
 .rodapé__imagem {
     margin: 0 20px 75px 0;
 }
-

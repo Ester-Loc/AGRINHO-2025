@@ -88,480 +88,118 @@
             <p class="instrucoes">São histórias fictícias, mas profundamente possíveis.</p>
             <p class="instrucoes">E talvez você se veja em alguma delas.</p>
         </div>
-        <h5 class="topicos">SEÇÕES
 
-            <li><strong class="topicos-negrito">Inseticidas:</strong>Proteja suas plantas contra insetos danosos.</li>
-            <li><strong class="topicos-negrito">Fungicidas:</strong>Controle fungos que podem causar doenças nas
-                plantas.</li>
-            <li><strong class="topicos-negrito">Bactericidas:</strong>Elimine bactérias que afetam a saúde das suas
-                plantas.</li>
-            <li><strong class="topicos-negrito">Acaricidas:</strong>Gerencie ácaros que prejudicam suas plantas.</li>
-            <li><strong class="topicos-negrito">Vírus:</strong> Identifique e gerencie doenças virais que podem afetar
-                suas plantas.</li>
-            <li><strong class="topicos-negrito">Lesmas e Caracóis:</strong> Controle esses moluscos que se alimentam de
-                folhas e flores, causando grandes danos.</li>
-            <li><strong class="topicos-negrito">Nematóidecidas:</strong> Elimine nematóides que atacam as raízes das
-                plantas
-                e prejudicam seu desenvolvimento.</li>
-        </h5>
 
-        <div class="conteudo">
-            <div class="botoes">
-                <button aria-label="Herbicidas" class="botao ativo">Inseticidas</button>
-                <button aria-label="Fungicidas" class="botao">Fungicidas</button>
-                <button aria-label="Bactericidas" class="botao">Bactericidas</button>
-                <button aria-label="Inseticidas" class="botao">Acaricidas</button>
-                <button aria-label="Inseticidas" class="botao">Vírus</button>
-                <button aria-label="Inseticidas" class="botao">Lesmas e Caracóis</button>
-                <button aria-label="Acaricidas" class="botao">Nematoidecidas</button>
+        <h5 class="topicos"></h5>
+
+
+        <div class="card-container">
+
+            <!-- Card 1 – Joana Ribeiro -->
+            <div class="card" onclick="this.classList.toggle('flip')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="imagens/card 1.historias.jpg" alt="Joana na queijaria">
+                        <div class="card-content">
+                            <div class="card-title">Joana Ribeiro, 38 anos</div>
+                            <div class="card-text">Joana largou a advocacia
+                                Para encontrar sabor no tempo — e no queijo artesanal.</div>
+                        </div>
+                        <div class="card-hint">Clique para mais</div>
+                    </div>
+                    <div class="card-back">
+                        <div class="card-content">
+                            <div class="card-title">“Agora vivo de verdade.”</div>
+                            <div class="card-text">
+                                Joana cresceu ouvindo da avó que estudar era o caminho certo — e foi. Virou advogada,
+                                trabalhou em multinacional e vivia no ritmo acelerado da cidade.
+                            </div>
+                            <div class="card-text">
+                                Um dia, numa reunião, percebeu que nem lembrava o gosto do próprio café. Pediu demissão,
+                                comprou uma chácara com a mãe e recomeçou.
+                            </div>
+                            <div class="card-text">Hoje, vive da produção artesanal de queijos e dá aulas online sobre
+                                alimentação
+                                consciente.
+                            </div>
+                            <div class="card-text">“Corri muito pra chegar num lugar que não era meu. Agora vivo mais
+                                devagar — e vivo de
+                                verdade.”
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="abas-textos">
-                <div class="aba-conteudo ativo">
-                    <h2>IDENTIFIQUE O INSETO:</h2>
-                    <main role="main">
-                        <ul class="produtos">
-                            <li>
-                                <h2>Pulgões</h2>
-                                <img src="imagens/Pulgões-flor.png" class="imagens">
-                                <p class="produto-descricao">Variedades de plantas mais comumente afetadas </p>
-                                <p class="produto-preco">Rosas, hibiscos, dálias, cravos, gerânios, petúnias.</p>
-                            </li>
 
-                            <li>
-                                <h2>Mosca-branca</h2>
-                                <img src="imagens/mosca-branca.png" class="imagens">
-                                <p class="produto-descricao">Variedades de plantas mais comumente afetadas</p>
-                                <p class="produto-preco"> Hibiscos, gerânios, petúnias, tomates, pimentas, crisântemos.
-                                </p>
-                            </li>
 
-                            <li>
-                                <h2>Lagartas</h2>
-                                <img src="imagens/Lagartas-flor.png" class="imagens">
-                                <p class="produto-descricao">Variedades de plantas mais comumente afetadas </p>
-                                <p class="produto-preco">Gerânios, petúnias, crisântemos, rosas, begônias, dálias.</p>
-                            </li>
-
-                            <li>
-                                <h2>Cochonilhas</h2>
-                                <img src="imagens/Cochonilhas (Coccoidea)-flor.png" class="imagens">
-                                <p class="produto-descricao">Variedades de plantas mais comumente afetadas </p>
-                                <p class="produto-preco">Cactos, suculentas, orquídeas, cítricos, camélias, gardênias.
-                                </p>
-                            </li>
-                        </ul>
-                    </main>
-                    <h3 class="aba-conteudo-titulo-principal">Inseticidas utilizados para controlar insetos que podem
-                        danificar as culturas. </h3>
-                    <h4 class="aba-conteudo-titulo-secundario">Exemplo: Imidacloprida, Piretróides, Neem (óleo de nim).
-                    </h4>
-                    <table class="styled-table">
-                        <thead>
-                            <tr>
-                                <th>Insetos</th>
-                                <th>Principio ativo</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <div class="contador">
-                                <div class="contador-pragas">
-                                    <tr>
-                                        <td>
-                                            <p class="contador-pragas-daninhas">Pulgões (Aphidoidea)</p>
-                                        </td>
-                                        <td>
-                                            <p class="contador-pragas-agrotoxicos">Inseticidas à base de piretroide (ex:
-                                                deltametrina), óleo de neem, acetamiprida, imidacloprido.</p>
-                                        </td>
-                                    </tr>
-                                </div>
-                                <div class="contador-pragas">
-                                    <tr>
-                                        <td>
-                                            <p class="contador-pragas-daninhas">Mosca-branca (Bemisia tabaci)</p>
-                                        </td>
-                                        <td>
-                                            <p class="contador-pragas-agrotoxicos">Imidacloprida, óleo de neem,
-                                                acetamiprida, tiametoxam.</p>
-                                        </td>
-                                    </tr>
-                                </div>
-                                <div class="contador-pragas">
-                                    <tr>
-                                        <td>
-                                            <p class="contador-pragas-daninhas">Lagartas (Lepidoptera)</p>
-                                        </td>
-                                        <td>
-                                            <p class="contador-pragas-agrotoxicos">Bacillus thuringiensis (Bt),
-                                                espinosade, clorantraniliprole, permetrina.</p>
-                                        </td>
-                                    </tr>
-                                </div>
-                                <div class="contador-pragas">
-                                    <tr>
-                                        <td>
-                                            <p class="contador-pragas-daninhas">Cochonilhas (Coccoidea)</p>
-                                        </td>
-                                        <td>
-                                            <p class="contador-pragas-agrotoxicos">Óleo mineral, óleo de neem,
-                                                imidacloprido, acetamiprida.</p>
-                                        </td>
-                                    </tr>
-                                </div>
+            <!-- Card 2 – Leandro Silva -->
+            <div class="card" onclick="this.classList.toggle('flip')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="imagens/card 2.jpg" alt="Leandro na roça com celular">
+                        <div class="card-content">
+                            <div class="card-title">Leandro Silva, 19 anos</div>
+                            <div class="card-text">Leandro criou um app
+                                Para ligar os alimentos do campo às merendas da cidade.
                             </div>
-                        </tbody>
-                    </table>
+                        </div>
+                        <div class="card-hint">Clique para mais</div>
+                    </div>
+                    <div class="card-back">
+                        <div class="card-content">
+                            <div class="card-title">“O alimento não precisa viajar 400 km.”</div>
+                            <div class="card-text">Leandro nasceu no sítio dos avós e cresceu entre cestas de verduras e
+                                cadernos escolares.</div>
+                            <div class="card-text">No ensino médio, percebeu: enquanto escolas jogavam comida fora,
+                                agricultores perdiam safra por falta de escoamento.</div>
+                            <div class="card-text">Combinou o saber da roça com a tecnologia e criou um app que conecta
+                                pequenos produtores a escolas públicas.</div>
+                            <div class="card-text">Hoje, sua ideia abastece merendas em 14 cidades.</div>
+                            <div class="card-text">“Não faz sentido a comida viajar 400 km. Às vezes, ela tá no sítio da
+                                esquina.”</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="aba-conteudo">
-                    <h2>IDENTIFIQUE O FUNGO:</h2>
-                    <main role="main">
-                        <ul class="produtos">
-                            <li>
-                                <h2>Oídio</h2>
-                                <img src="imagens/Oídio (Erysiphales)-flor.png" class="imagens">
-                                <p class="produto-descricao">Variedades de plantas mais comumente afetadas </p>
-                                <p class="produto-preco">Rosas, flox, zínias, petúnias, cravos, melancias.</p>
-                            </li>
+            </div>
 
-                            <li>
-                                <h2>Míldio</h2>
-                                <img src="imagens/Míldio (Peronosporaceae)-flor.png" class="imagens">
-                                <p class="produto-descricao">Variedades de plantas mais comumente afetadas </p>
-                                <p class="produto-preco">Vinca, impatiens, crisântemos, begônias, rosas, alfaces.</p>
-                            </li>
 
-                            <li>
-                                <h2>Ferrugem</h2>
-                                <img src="imagens/Ferrugem (Pucciniales)-flor.png" class="imagens">
-                                <p class="produto-descricao">Variedades de plantas mais comumente afetadas </p>
-                                <p class="produto-preco">Rosas, cravos, fúcsias, gerânios, juníperos, gladíolos.</p>
-                            </li>
-
-                            <li>
-                                <h2>Antracnose</h2>
-                                <img src="imagens/Antracnose (Colletotrichum spp.)-flor.png" class="imagens">
-                                <p class="produto-descricao">Variedades de plantas mais comumente afetadas </p>
-                                <p class="produto-preco">Hortênsias, tomates, pepinos, feijões, trepadeiras, árvores
-                                    frutíferas.</p>
-                            </li>
-
-                    </main>
-                    <h3 class="aba-conteudo-titulo-principal">Fungicidas utilizados para controlar fungos e doenças
-                        fúngicas em plantas.</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">Exemplo: Enxofre, Azoxistrobina, Tebuconazol.</h4>
-                    <table class="styled-table">
-                        <thead>
-                            <tr>
-                                <th>Fungo</th>
-                                <th>Principio ativo</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <div class="contador">
-                                <div class="contador-pragas">
-                                    <tr>
-                                        <td>
-                                            <p class="contador-pragas-daninhas">Oídio (Erysiphales)</p>
-                                        </td>
-                                        <td>
-                                            <p class="contador-pragas-agrotoxicos">Fungicidas à base de enxofre, cobre,
-                                                miclobutanil, propiconazol. </p>
-                                        </td>
-                                    </tr>
-                                </div>
-
-                                <div class="contador-pragas">
-                                    <tr>
-                                        <td>
-                                            <p class="contador-pragas-daninhas">Míldio (Peronosporaceae)</p>
-                                        </td>
-                                        <td>
-                                            <p class="contador-pragas-agrotoxicos">Mancozebe, Fosetil-Al, Metalaxil,
-                                                oxicloreto de cobre.</p>
-                                        </td>
-                                    </tr>
-                                </div>
-
-                                <div class="contador-pragas">
-                                    <tr>
-                                        <td>
-                                            <p class="contador-pragas-daninhas">Ferrugem (Pucciniales)</p>
-                                        </td>
-                                        <td>
-                                            <p class="contador-pragas-agrotoxicos">tebuconazol, mancozebe, oxicloreto de
-                                                cobre, azoxistrobina.</p>
-                                        </td>
-                                    </tr>
-                                </div>
-
-                                <div class="contador-pragas">
-                                    <tr>
-                                        <td>
-                                            <p class="contador-pragas-daninhas">Antracnose (Colletotrichum spp.)</p>
-                                        </td>
-                                        <td>
-                                            <p class="contador-pragas-agrotoxicos">tiofanato-metílico, mancozebe,
-                                                azoxistrobina, captana. </p>
-                                        </td>
-                                    </tr>
-                                </div>
+            <!-- Card 3 – Dona Zilda -->
+            <div class="card" onclick="this.classList.toggle('flip')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="imagens/card 3.jpg" alt="Dona Zilda sorrindo">
+                        <div class="card-content">
+                            <div class="card-title">Dona Zilda, 74 anos</div>
+                            <div class="card-text">
+                                Dona Zilda viralizou
+                                E levou a sabedoria do mato para quase um milhão de seguidores.
                             </div>
-                        </tbody>
-                    </table>
+                        </div>
+                        <div class="card-hint">Clique para mais</div>
+                    </div>
+                    <div class="card-back">
+                        <div class="card-content">
+                            <div class="card-title">“O campo chegou ao mundo por mim.”</div>
+                            <div class="card-text">Parteira respeitada no interior do Paraná, Dona Zilda já ajudou a
+                                nascer mais de 300 crianças.</div>
+                            <div class="card-text">Um dia, a neta gravou um vídeo dela ensinando a fazer sabão de cinza
+                                — e ele viralizou.</div>
+                            <div class="card-text">Hoje, ela ensina sobre ervas, receitas antigas e cuidados naturais
+                                para uma multidão online.</div>
+                            <div class="card-text">“Nunca saí do campo. Mas o campo chegou ao mundo por mim.”</div>
+                            <div class="card-text">“Não precisa sair do lugar pra transformar. Basta não esquecer quem
+                                se é.”</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="aba-conteudo">
-                    <h2>IDENTIFIQUE A BACTÉRIA:</h2>
-                    <main role="main">
-                        <ul class="produtos">
-                            <li>
-                                <h2>Mancha-bacteriana</h2>
-                                <img src="imagens/Mancha-bacteriana (Xanthomonas spp.)-flor.png" class="imagens">
-                                <p class="produto-descricao">Variedades de plantas mais comumente afetadas </p>
-                                <p class="produto-preco">Gerânios, hortênsias, violetas, begônias, pimentas, tomates.
-                                </p>
-                            </li>
-                            <li>
-                                <h2>Murcha-bacteriana</h2>
-                                <img src="imagens/Murcha Bacteriana (Ralstonia solanacearum)-flor.png" class="imagens">
-                                <p class="produto-descricao">Variedades de plantas mais comumente afetadas </p>
-                                <p class="produto-preco">Tomates, batatas, berinjelas, crisântemos, gerânios, tabaco.
-                                </p>
-                            </li>
-                    </main>
-                    <h3 class="aba-conteudo-titulo-principal">Bactericidas utilizados para controlar bactérias que
-                        podem causar doenças nas plantas.</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">Exemplo: Oxitetraciclina, Cobre, Kasugamicina.</h4>
-                    <table class="styled-table">
-                        <thead>
-                            <tr>
-                                <th>Bactéria</th>
-                                <th>Principio ativo</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <div class="contador">
-                                <div class="contador-pragas">
-                                    <tr>
-                                        <td>
-                                            <p class="contador-pragas-daninhas">Mancha-bacteriana (Xanthomonas spp.)</p>
-                                        </td>
-                                        <td>
-                                            <p class="contador-pragas-agrotoxicos">Bactericidas à base de cobre,
-                                                estreptomicina, oxitetraciclina. </p>
-                                        </td>
-                                    </tr>
-                                </div>
-                                <div class="contador-pragas">
-                                    <tr>
-                                        <td>
-                                            <p class="contador-pragas-daninhas">Murcha Bacteriana (Ralstonia
-                                                solanacearum)</p>
-                                        </td>
-                                        <td>
-                                            <p class="contador-pragas-agrotoxicos">Não há bactericidas químicos
-                                                específicos eficazes; controle inclui rotação de culturas, uso de
-                                                variedades resistentes e práticas de higiene. </p>
-                                        </td>
-                                    </tr>
-                                </div>
-                            </div>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="aba-conteudo">
-                    <h2>IDENTIFIQUE O ÁCARO:</h2>
-                    <main role="main">
-                        <ul class="produtos">
-                            <li>
-                                <h2>Ácaro-rajado</h2>
-                                <img src="imagens/Ácaro-rajado (Tetranychus urticae)-flor.png" class="imagens">
-                                <p class="produto-descricao">Variedades de plantas mais comumente afetadas </p>
-                                <p class="produto-preco">Rosas, crisântemos, hibiscos, gerânios, morangos, violetas.</p>
-                            </li>
+            </div>
 
-                    </main>
-                    <h3 class="aba-conteudo-titulo-principal">Acaricidas utilizados para controlar ácaros que podem
-                        infestar as plantas.</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">Exemplo: Abamectina, Fenpiroximato, Propargite.</h4>
-                    <table class="styled-table">
-                        <thead>
-                            <tr>
-                                <th>Ácaro</th>
-                                <th>Principio ativo</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <div class="contador">
-                                <div class="contador-pragas">
-                                    <tr>
-                                        <td>
-                                            <p class="contador-pragas-daninhas">Ácaro-rajado (Tetranychus urticae)</p>
-                                        </td>
-                                        <td>
-                                            <p class="contador-pragas-agrotoxicos">Acaricidas à base de abamectina,
-                                                enxofre, óleo de neem, milbemectina.</p>
-                                        </td>
-                                    </tr>
-                                </div>
-                            </div>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="aba-conteudo">
-                    <h2>IDENTIFIQUE O VÍRUS:</h2>
-                    <main role="main">
-                        <ul class="produtos">
-                            <li>
-                                <h2>Mosaico do Tabaco</h2>
-                                <img src="imagens/Mosaico do Tabaco (TMV)-flor.png" class="imagens">
-                                <p class="produto-descricao">Variedades de plantas mais comumente afetadas </p>
-                                <p class="produto-preco">Petúnias, tabaco, tomates, pimentas, espinafre, cucurbitáceas.
-                                </p>
-                            </li>
-                            <li>
-                                <h2>Vírus do Enrolamento das Folhas</h2>
-                                <img src="imagens/Vírus do Enrolamento das Folhas-flor.png" class="imagens">
-                                <p class="produto-descricao">Variedades de plantas mais comumente afetadas </p>
-                                <p class="produto-preco">Tomates, pimentas, batatas, petúnias, girassóis, dálias.</p>
-                            </li>
-                    </main>
-                    <h3 class="aba-conteudo-titulo-principal">Bactericidas utilizados para
-                        controlar bactérias que podem causar doenças nas plantas.</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">Exemplo: Aldicarbe, Carbofurano, Oxamila.
-                    </h4>
-                    <table class="styled-table">
-                        <thead>
-                            <tr>
-                                <th>Vírus</th>
-                                <th>Principio ativo</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <div class="contador">
-                                <div class="contador-pragas">
-                                    <tr>
-                                        <td>
-                                            <p class="contador-pragas-daninhas">Mosaico do Tabaco (TMV)</p>
-                                        </td>
-                                        <td>
-                                            <p class="contador-pragas-agrotoxicos"> Não há defensivos químicos
-                                                específicos; controle inclui remoção de plantas infectadas e uso de
-                                                variedades resistentes.</p>
-                                        </td>
-                                    </tr>
-                                </div>
-                                <div class="contador-pragas">
-                                    <tr>
-                                        <td>
-                                            <p class="contador-pragas-daninhas">Vírus do Enrolamento das Folhas</p>
-                                        </td>
-                                        <td>
-                                            <p class="contador-pragas-agrotoxicos"> Não há defensivos químicos
-                                                específicos; controle inclui manejo de vetores como pulgões e
-                                                mosca-branca com inseticidas.</p>
-                                        </td>
-                                    </tr>
-                                </div>
-                            </div>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="aba-conteudo">
-                    <h2>LESMAS E CARACÓIS:</h2>
-                    <main role="main">
-                        <ul class="produtos">
-                            <li>
-                                <h2>Lesmas</h2>
-                                <img src="imagens/Lesmas-flor.png" class="imagens">
-                                <p class="produto-descricao">Variedades de plantas mais comumente afetadas </p>
-                                <p class="produto-preco">Hostas, violetas, calêndulas, alfaces, morangos, petúnias.</p>
-                            </li>
-                            <li>
-                                <h2>Caracóis</h2>
-                                <img src="imagens/caracois-flor.png" class="imagens">
-                                <p class="produto-descricao">Variedades de plantas mais comumente afetadas </p>
-                                <p class="produto-preco">Hostas, violetas, calêndulas, alfaces, morangos, petúnias.</p>
-                            </li>
-                    </main>
-                    <h3 class="aba-conteudo-titulo-principal">Bactericidas utilizados para
-                        controlar bactérias que podem causar doenças nas plantas.</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">Exemplo: Aldicarbe, Carbofurano, Oxamila.
-                    </h4>
-                    <table class="styled-table">
-                        <thead>
-                            <tr>
-                                <th>Organismo</th>
-                                <th>Principio ativo</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <div class="contador">
-                                <div class="contador-pragas">
-                                    <tr>
-                                        <td>
-                                            <p class="contador-pragas-daninhas">Lesmas</p>
-                                        </td>
-                                        <td>
-                                            <p class="contador-pragas-agrotoxicos">Iscas à base de metaldeído, fosfato
-                                                de ferro, sulfato de ferro, metiocarbe.</p>
-                                        </td>
-                                    </tr>
-                                </div>
-                                <div class="contador-pragas">
-                                    <tr>
-                                        <td>
-                                            <p class="contador-pragas-daninhas">Caracóis</p>
-                                        </td>
-                                        <td>
-                                            <p class="contador-pragas-agrotoxicos">Iscas à base de metaldeído, fosfato
-                                                de ferro, sulfato de ferro, metiocarbe.</p>
-                                        </td>
-                                    </tr>
-                                </div>
-                            </div>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="aba-conteudo">
-                    <h2>IDENTIFIQUE O NEMATÓIDE:</h2>
-                    <main role="main">
-                        <ul class="produtos">
-                            <li>
-                                <h2>Nematóides</h2>
-                                <img src="imagens/Nematóides (Meloidogyne spp.)-flor.png" class="imagens">
-                                <p class="produto-descricao">Variedades de plantas mais comumente afetadas</p>
-                                <p class="produto-preco">Crisântemos, tomates, cenouras, alfaces, begônias, dálias.</p>
-                            </li>
-                    </main>
-                    <h3 class="aba-conteudo-titulo-principal">Bactericidas utilizados para
-                        controlar bactérias que podem causar doenças nas plantas.</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">Exemplo: Aldicarbe, Carbofurano, Oxamila.
-                    </h4>
-                    <table class="styled-table">
-                        <thead>
-                            <tr>
-                                <th>Nematoide</th>
-                                <th>Principio ativo</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <div class="contador">
-                                <div class="contador-pragas">
-                                    <tr>
-                                        <td>
-                                            <p class="contador-pragas-daninhas">Nematóides (Meloidogyne spp.)</p>
-                                        </td>
-                                        <td>
-                                            <p class="contador-pragas-agrotoxicos">Nematicidas à base de abamectina,
-                                                fluopyram, oxamil, metam sódico.</p>
-                                        </td>
-                                    </tr>
-                                </div>
-                            </div>
-                        </tbody>
-                    </table>
+        </div>
 
+        <h5 class="topicos"></h5>
+    
     </section>
+
 
     <footer class="rodapé">
         <h2 class="rodapé__titulo">Memórias do Futuro</h2>
